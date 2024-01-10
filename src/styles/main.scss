@@ -1,0 +1,301 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+$opensanscondensed-font-path: "../assets/OpenSans_Condensed/";
+$opensanssemicond-font-path: "../assets/OpenSans_SemiCondensed";
+
+@font-face {
+  src: url($opensanscondensed-font-path + "/OpenSans_Condensed-Regular.ttf");
+  font-family: "Open Sans Condensed";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url($opensanssemicond-font-path + "/OpenSans_SemiCondensed-Regular.ttf");
+  font-family: "Open Sans Semi";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url($opensanssemicond-font-path + "/OpenSans_SemiCondensed-Light.ttf");
+  font-family: "Open Sans Semi";
+  font-weight: 300;
+}
+
+$primary-color: #fff;
+$secondary-color: #cf1430;
+$bg-color: #0e1414;
+
+body {
+  background: $bg-color;
+  color: $primary-color;
+  font-family: "Open Sans";
+}
+
+.answerYourBody {
+  margin-bottom: 180px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-weight: 100;
+    border-bottom: 1px #fff solid;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    color: rgba($color: #fff, $alpha: 0.8);
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .text-red {
+    color: $secondary-color;
+  }
+
+  .topParagraph {
+    p {
+      line-height: 30px;
+      font-size: 18px;
+      font-weight: 100;
+      opacity: 0.8;
+    }
+  }
+
+  .bottomParagraph {
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0px;
+      line-height: 1.7;
+    }
+  }
+}
+
+.allTheLatest {
+  h1 {
+    font-size: 42px;
+    opacity: 0.9;
+  }
+
+  .imgContainer img {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: #cf1430 5px solid;
+    width: 100%;
+    height: auto;
+  }
+
+  .imgDesc {
+    margin-top: 30px;
+
+    .title {
+      font-size: 18px;
+      color: $primary-color;
+      margin-bottom: 5px;
+    }
+    .desc {
+      line-height: 30px;
+      font-size: 16px;
+      font-weight: 100;
+      opacity: 0.5 !important;
+    }
+  }
+  .button {
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      border-bottom: 1px $secondary-color solid;
+      letter-spacing: 1.2px;
+      font-size: 14px;
+      font-weight: 500;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.modal-body {
+  background-color: $bg-color;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+  font-size: 30px;
+  font-weight: normal;
+  color: $secondary-color;
+  background-color: $bg-color;
+  border: none;
+  border-radius: 5px;
+  width: 28px;
+  height: 28px;
+  opacity: 1;
+  line-height: 0;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  /* CSS */
+  body {
+    margin: 180px 350px;
+  }
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+  body {
+    margin: 100px 300px;
+  }
+  .cards {
+    .col-lg-4:nth-child(2) {
+      margin: 50px 0 !important;
+    }
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+  body {
+    margin: 80px 100px;
+  }
+  .answerYourBody {
+    h2 {
+      margin-top: 30px;
+    }
+    #img2 {
+      margin-bottom: 20px !important;
+    }
+    #img3 {
+      margin: 0 !important;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 912px) {
+  /* CSS */
+  body {
+    margin: 80px 100px;
+  }
+  .answerYourBody {
+    h2 {
+      margin-top: 30px;
+    }
+    #img2 {
+      margin: 40px 0 !important;
+    }
+  }
+  .cards {
+    .col-lg-4:nth-child(2) {
+      margin: 50px 0 !important;
+    }
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+  body {
+    margin: 80px 100px;
+  }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+  body {
+    margin: 50px 30px;
+  }
+  .answerYourBody {
+    h2 {
+      margin-top: 30px;
+    }
+
+    #img2 {
+      margin: 20px 0 !important;
+    }
+  }
+  .cards {
+    .col-lg-4:nth-child(2) {
+      margin: 50px 0 !important;
+    }
+  }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  body {
+    margin: 50px 30px;
+  }
+
+  .answerYourBody {
+    h2 {
+      margin-top: 30px;
+    }
+
+    #img2 {
+      margin: 20px 0 !important;
+    }
+  }
+
+  .cards {
+    .col-lg-4:nth-child(2) {
+      margin: 40px 0 !important;
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  /* CSS */
+  body {
+    margin: 50px 30px;
+  }
+  .answerYourBody {
+    h2 {
+      margin-top: 30px;
+    }
+
+    #img2 {
+      margin: 20px 0 !important;
+    }
+  }
+  .cards {
+    .col-lg-4:nth-child(2) {
+      margin: 40px 0 !important;
+    }
+  }
+}
