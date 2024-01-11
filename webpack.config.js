@@ -49,7 +49,7 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      title: "Orchard FED Test",
+      title: "Orchard FED",
       filename: "index.html",
       template: "src/template.html",
     }),

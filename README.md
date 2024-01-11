@@ -33,3 +33,19 @@ We are looking for your ability to bring life to static designs. During that pro
 * **Git:** Bonus points for submission on a github account showing multiple commits.
 * **Quality:** Production-grade build and precision.
 
+## Reasoning and Decisions
+
+* **HTML**
+For the HTML, I drawed a wireframe on a notebook or paint to visualize the layout so I have an idea on how I will structure each components, sections, rows, columns and elements while making some changes along the way.
+
+* **Build Tools**
+I used webpack or vite as I have some experience with it when I was learning react.
+
+* **JS**
+I'm quite familiar on using jQuery so I went with it. When I was importing images I added all the image assets in a JSON object so it will be easier to call them and I also added in a simple loading gif when opening each image in "Section: Answer your body's needs". I added in when you click the elements it captures the element tag and console.log which element you clicked.
+
+* **Framework**
+I used bootstrap for ease of use, familiarity, and less custom css styling.
+
+* **CSS/SASS**
+I used SASS/SCSS for easier coding when specifying certain elements nested and I will have less custom css styling which makes the code cleaner.
