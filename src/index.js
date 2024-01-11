@@ -26,6 +26,7 @@ const bigImg3 = $("#img3").attr("data-bigimage", images["Image-03@2x.jpg"]);
 const imgAEG1 = $("#imgAEG1").attr("src", images["AEGImage-01.jpg"]);
 const imgAEG2 = $("#imgAEG2").attr("src", images["AEGImage-02.jpg"]);
 const imgAEG3 = $("#imgAEG3").attr("src", images["AEGImage-03.jpg"]);
+const favicon = $("link").attr("href", images["favicon-16px.png"]);
 
 $(document).ready(function () {
   // Gets the src from the data-src on each image
